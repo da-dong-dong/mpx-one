@@ -1,6 +1,6 @@
 <template>
   <list></list>
-  111//??
+  111222
   <component is="{{flag}}"></component>
 </template>
 
