@@ -1,0 +1,32 @@
+<template>
+  <list></list>
+  111
+  <component is="{{flag}}"></component>
+</template>
+
+<script>
+  import { createPage } from '@mpxjs/core'
+
+  createPage({
+    data () {
+      return {
+        flag: 'list'
+      }
+    },
+    onLoad () {},
+    ready () {
+      setTimeout(() => {
+        this.flag = 'text'
+      }, 3000)
+    }
+  })
+</script>
+
+<script type="application/json">
+  {
+    "usingComponents": {
+      "list": "../components/list",
+      "text": "../components/text"
+    }
+  }
+</script>
